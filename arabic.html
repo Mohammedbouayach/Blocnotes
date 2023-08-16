@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>bloc-notes</title>
+  
+  <!-- bootstrap css -->
+  
+ <link rel="stylesheet" href="bootstrap.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+<div class="head">
+ 
+  <div class="wather">
+  <img id="moon" src="last-quarte-phase-of-moon.png">
+  
+ </div>
+ <div class="langue">
+  <div class="dropdown">
+ <button class="dropdown-toggle" id="x" data-toggle="dropdown" style="position: relative; left: 40px" >اللغة</button>
+ <div class="dropdown-menu" aria-labelledby="x" >
+  
+  
+  <a href="arabic.html" class="dropdown-item">  <span>🇸🇦</span>العربية  </a>
+  <a href="index.html" class="dropdown-item">France <span>🇨🇵</span></a> 
+ </div>
+ 
+ </div>
+
+
+</div>
+ 
+ 
+  <div class="ajout">
+  
+  <img onclick="add()" src="vecteezy_plus-sign-icon_9266327_530.png" alt="vecteezy_plus-sign-icon_9266327_530.png">
+  <p>إضافة ملاحظة جديدة</p>
+ </div>
+ 
+  <input type="search" placeholder=" ...بحث " id="search" onkeyup="search(this.value)" >
+  <div class="box">
+<div class="container" id="info" >
+  
+ </div>
+ 
+</div>
+
+
+ <div class="inputs" id="inputs">
+  
+  <bs>
+   
+   <input type="text" id="titel" placeholder="العنوان..."  style="direction: rtl">
+   
+   <hr>
+   <textarea name="" id="content" cols="20" rows="5" placeholder=" إبدا بكتابة ملاحظاتك...
+   "style="direction: rtl" ></textarea>
+   
+   <button class="btn btn-primary">إضافة</button>
+   
+   
+   
+   
+      <img onclick="cross()" src="cross.png" alt="">
+
+   
+  </bs>
+  
+  
+ </div>
+
+
+
+<script src="popper.min.js"></script>
+   <script src="jquery-3.7.0.min.js"></script>
+  <script src="bootstrap.js"></script>
+
+  
+  <script src="arabic.js"></script>
+</body>
+</html>
